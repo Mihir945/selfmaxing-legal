@@ -23,43 +23,49 @@
     li { margin-bottom: 8px; }
     hr { border: 0; border-top: 1px solid #27272A; margin: 30px 0; }
     .box { background: #18181B; padding: 16px; border-radius: 8px; border: 1px solid #27272A; }
+    .badge { display: inline-block; background: #06B6D4; color: #09090B; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 12px; }
   </style>
 </head>
 <body>
 
   <h1>Privacy Policy for SelfMaxing AI</h1>
-  <p><strong>Last Updated:</strong> October 2026</p>
-  <p>SelfMaxing AI ("we," "our," or "the App") is committed to protecting your privacy and biometric data. This Privacy Policy outlines how we collect, process, retain, and protect your personal information across our self-improvement verticals (Hair, Face, Physique, Style, and Communication).</p>
+  <p><strong>Last Updated:</strong> October 2026 <span class="badge">Zero-Storage Architecture</span></p>
+  <p>SelfMaxing AI ("we," "our," or "the App") is committed to protecting your privacy and biometric integrity. This Privacy Policy outlines our strict privacy-first practices across our self-improvement verticals (Hair, Face, Physique, Style, and Communication).</p>
 
   <hr>
 
-  <h2>1. Information We Collect</h2>
-  <p>To deliver personalized aesthetic, grooming, and vocal cadence coaching, we collect:</p>
+  <h2>1. Information We Collect & Process</h2>
+  <p>To provide personalized appearance and vocal analysis, we handle the following:</p>
   <ul>
-    <li><strong>Account Details:</strong> Email address and Firebase UID (via Google Sign-In or manual authentication).</li>
-    <li><strong>User Media:</strong> Images for Hair, Face, Physique, and Style; up to 30-second audio recordings for Communication analysis.</li>
-    <li><strong>Extracted Metrics:</strong> Numerical scores, symmetry ratios, seasonal palettes, and daily habit progress.</li>
+    <li><strong>Account Details:</strong> Email address and Firebase User ID (UID) via Google Sign-In or email registration.</li>
+    <li><strong>User Media (Real-Time In-Memory Ingestion):</strong> Frontal/profile images for Hair, Face, Physique, and Style; up to 30-second audio clips for Communication coaching.</li>
+    <li><strong>Extracted Coaching Metrics:</strong> Structural balance scores, posture alignment grades, seasonal color palettes, and daily routine completion logs stored in Cloud Firestore.</li>
   </ul>
 
-  <h2>2. Biometric Privacy & 24-Hour Ephemeral Retention</h2>
+  <h2>2. Zero-Disk Biometric Privacy Guarantee</h2>
   <div class="box">
-    <p><strong>Ephemeral Processing Guarantee:</strong> All user-uploaded photos and audio clips stored in Google Cloud Storage are permanently purged within <strong>24 hours</strong> via automated lifecycle rules. Only derived numerical scores and habit checklists are saved to your private profile.</p>
+    <p><strong>Zero Cloud Storage / Real-Time Ephemeral Processing:</strong><br>
+    SelfMaxing AI operates on a strict zero-storage media model. <strong>No user photographs or voice recordings are ever saved to persistent cloud storage, database buckets, or third-party file servers.</strong> Media is held ephemerally in volatile device memory (RAM) solely for the duration of inference and is instantly and permanently destroyed upon metric extraction.</p>
   </div>
 
-  <h2>3. AI Processing via Google Gemini</h2>
-  <p>Media inputs are analyzed using secure cloud functions interfacing with Google Gemini API models. Data is processed solely for coaching directives and is never used to train public AI models.</p>
+  <h2>3. Generative AI Inference (Google Gemini)</h2>
+  <p>Diagnostic coaching is generated via the Google Gemini API. Media inputs are transmitted via encrypted HTTPS TLS 1.3 streams directly for inference. Media data is never stored by us on disk and is never used to train public foundational AI models.</p>
 
   <h2>4. Subscriptions & Payments</h2>
-  <p>Payment transactions are processed securely through Google Play Billing and managed via RevenueCat. We never collect or store your payment card or banking credentials.</p>
+  <p>Subscription purchases for individual fields and All-Access passes are processed directly by Google Play In-App Billing and managed via RevenueCat. We never store, process, or have access to your credit card, debit card, bank, or UPI details.</p>
 
-  <h2>5. In-App Account & Data Deletion</h2>
-  <p>You can permanently delete your account, metrics history, and all stored data anytime in the app via <strong>Settings &rarr; Delete Account & Data</strong>.</p>
+  <h2>5. In-App User Controls & Complete Account Purge</h2>
+  <p>In full compliance with Google Play Store Developer Policies and GDPR/CCPA regulations:</p>
+  <ul>
+    <li><strong>Account Deletion:</strong> You can permanently wipe your account and all associated habit/metric history anytime directly in the app via <strong>Settings &rarr; Danger Zone &rarr; Delete Account & Data</strong>.</li>
+    <li><strong>AI Output Reporting:</strong> Users can flag inaccurate or inappropriate AI suggestions directly within the app using the "Report" button on any analysis card.</li>
+  </ul>
 
   <h2>6. Non-Medical Cosmetic Disclaimer</h2>
-  <p>All recommendations, scores, and grooming routines provided by SelfMaxing AI are strictly for aesthetic and self-improvement purposes. We do not provide medical or dermatological advice.</p>
+  <p>SelfMaxing AI provides cosmetic grooming, styling, and vocal delivery suggestions for informational, aesthetic, and self-improvement purposes only. None of our analysis constitutes medical, clinical, or dermatological advice.</p>
 
-  <h2>7. Contact Us</h2>
-  <p>For any privacy requests or inquiries, email: <a href="mailto:support@selfmaxing.ai">support@selfmaxing.ai</a></p>
+  <h2>7. Contact Information</h2>
+  <p>For data privacy requests or support, contact us at: <a href="mailto:support@selfmaxing.ai">support@selfmaxing.ai</a></p>
 
 </body>
 </html>
